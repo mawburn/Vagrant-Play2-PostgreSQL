@@ -25,7 +25,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.network "public_network"
   config.vm.hostname = "yourservername"
 
-  config.vm.synced_folder "src/", "/home/vagrant/src"
+  config.vm.synced_folder "src/", "/home/vagrant/src/"
 
   config.vm.provider :virtualbox do |vb|
     vb.customize [
