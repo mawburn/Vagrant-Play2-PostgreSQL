@@ -1,7 +1,7 @@
 Vagrant-Play2-PostgreSQL
 ========================
 
-Just a basic Vagrant VM I setup to run my Play Development Server over my home network.
+Just a basic Vagrant VM I set up to run my Play Development Server over my home network.
 
 ---
 
@@ -11,7 +11,7 @@ Just a basic Vagrant VM I setup to run my Play Development Server over my home n
 * Typesafe Activator 
 * PostgreSQL 9.3
 
-VM Default Configuration
+Default Configuration
 
 * CPUs: 2
 * Memory: 2gb
