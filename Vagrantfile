@@ -23,7 +23,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Bridged networks make the machine appear as another physical device on
   # your network.
   config.vm.network "public_network"
-  config.vm.hostname = "lilswap"
+  config.vm.hostname = "yourservername"
 
   config.vm.synced_folder "src/", "/home/vagrant/src"
 
