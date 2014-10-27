@@ -45,7 +45,7 @@ sudo -u postgres psql -c "ALTER USER postgres WITH PASSWORD '$pgPass';"
 echo "user: postgres"
 echo "pass: $pgPass"
 
-sudo -u postgres createdb lilswap
+sudo -u postgres createdb yourdbname
 sudo -u postgres psql -c "CREATE EXTENSION adminpack;"
 
 echo "~~~! PostgreSQL $pgVersion Complete !~~~"
