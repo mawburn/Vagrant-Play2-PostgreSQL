@@ -1,20 +1,17 @@
 #!/usr/bin/env bash
 
-# activator -Dhttp.address=0.0.0.0
-
 #variables
 activatorVersion="1.2.10"
 pgVersion="9.3"
 pgPass="password"
+pgDb="yourdbname"
 
 echo "=========================================="
 echo ".....Provision VM START"
 echo "=========================================="
 
-sudo apt-get update
-
 #install prerequisits
-sudo apt-get install -y curl unzip openjdk-7-jdk
+sudo apt-get update && apt-get install -y curl unzip openjdk-7-jdk
 sudo apt-get install -y scala
 sudo apt-get install -y postgresql-$pgVersion postgresql-contrib-$pgVersion postgresql-client
 sudo apt-get update
@@ -45,7 +42,7 @@ sudo -u postgres psql -c "ALTER USER postgres WITH PASSWORD '$pgPass';"
 echo "user: postgres"
 echo "pass: $pgPass"
 
-sudo -u postgres createdb yourdbname
+sudo -u postgres createdb $pgDb
 sudo -u postgres psql -c "CREATE EXTENSION adminpack;"
 
 echo "~~~! PostgreSQL $pgVersion Complete !~~~"
