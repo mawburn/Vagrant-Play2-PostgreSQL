@@ -11,6 +11,11 @@ Just a basic Vagrant VM I setup to run my Play Development Server over my home n
 * Typesafe Activator 
 * PostgreSQL 9.3
 
+VM Default Configuration
+
+* CPUs: 2
+* Memory: 2gb
+
 ---
 
 ###Usage
